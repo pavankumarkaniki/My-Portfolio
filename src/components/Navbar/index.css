@@ -1,0 +1,151 @@
+* {
+  font-family: 'Roboto';
+}
+
+.nav-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 10px 40px;
+  margin: auto;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  background-color: transparent;
+}
+
+.left-con {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  text-decoration: none;
+}
+
+.nav-logo,
+.nav-logo-dark {
+  height: 40px;
+  width: 35px;
+}
+
+.name {
+  color: #000000;
+  font-size: 25px;
+}
+
+.name-dark {
+  color: #ffffff;
+  font-size: 25px;
+}
+
+.nav-items-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  list-style-type: none;
+}
+
+.nav-link,
+.nav-link-dark {
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.nav-link {
+  color: #000000;
+}
+
+.nav-link-dark {
+  color: #ffffff;
+}
+
+.toggleBtn {
+  background-color: transparent;
+  border: none;
+}
+
+.moon {
+  height: 40px;
+  width: 40px;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 767px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    padding: 10px 20px;
+    position: relative;
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: inherit;
+  }
+
+  .left-con {
+    margin-bottom: 10px;
+    gap: 10px;
+  }
+
+  .name,
+  .name-dark {
+    font-size: 20px;
+  }
+
+  .moon {
+    height: 30px;
+    width: 30px;
+  }
+
+  .nav-items-container {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 12px;
+    margin-top: 10px;
+    padding-left: 0;
+  }
+
+  .hide-menu {
+    display: none;
+  }
+
+  .show-menu {
+    display: flex;
+  }
+}
+
+/* Desktop override: force nav items to show and menu icon to hide */
+@media screen and (min-width: 768px) {
+  .nav-items-container {
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+}

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 The goal of this coding exam is to quickly get you off the ground with **Lists and Keys**.
 
 ### Refer to the image below:
@@ -84,3 +85,7 @@ The app must have the following functionalities
 >
 > - All components you implement should go in the `src/components` directory.
 > - Don't change the component folder names as those are the files being imported into the tests.
+=======
+# My-Portfolio
+Passionate full-stack developer specializing in React and Node.js, building clean, responsive, and user-friendly web applications.
+>>>>>>> 0cf2c1c95e12a0549367b37b5d947a3302fa733b

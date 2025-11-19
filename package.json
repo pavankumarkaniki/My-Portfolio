@@ -2,9 +2,9 @@
   "name": "multilingual-greetings",
   "private": true,
   "version": "1.0.0",
-  "engines": {
-    "node": "^10.13 || 12 || 14 || 15",
-    "npm": ">=6"
+  "engines": {  
+    "node": "18.x",
+  "npm": ">=6"
   },
   "dependencies": {
     "@craco/craco": "6.1.1",
